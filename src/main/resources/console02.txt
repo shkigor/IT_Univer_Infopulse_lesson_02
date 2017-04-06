@@ -1,0 +1,27 @@
+C:\Program Files\PostgreSQL\9.6\bin>psql -U postgres
+Password for user postgres:
+psql (9.6.2)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+
+/**
+Connection
+  \c[onnect] {[DBNAME|- USER|- HOST|- PORT|-] | conninfo}
+*/
+
+postgres=# \c univerlesson01
+
+
+/** After Part02_Savepoint */
+univerlesson01=# select * from clients;
+ id | name  | lastname
+----+-------+----------
+  1 | vasya | pupkin
+  2 | Petya | Petrov
+  3 | Ivan  | Ivanov
+  4 | Ivan1 | Ivanov1
+  6 | aaa2  | aaa2
+(5 rows)
