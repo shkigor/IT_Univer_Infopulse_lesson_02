@@ -20,6 +20,11 @@ public class Part04_DatabaseMetaData {
             System.out.println(resultSet.getString(4));
         }
 
+        ResultSet metaDataCatalogs = metaData.getCatalogs();
+        while (metaDataCatalogs.next()) {
+            System.out.println(metaDataCatalogs.getString(1));
+        }
+
         con.close();
     }
 }
