@@ -1,0 +1,13 @@
+Timetable:
+
+ResultSetMetaData
+start ???
+end   1:26:50
+
+Пулы соединений к БД
+start 1:27
+end   1:40
+
+DAO
+start 1:40:10
+end   ???
