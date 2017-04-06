@@ -23,5 +23,6 @@ public class Part05_ResultSetMetaData {
         }
         st.close();
         con.close();
+        // The end timestamp about ResultSetMetaData in the lection record is 1:26:50
     }
 }
