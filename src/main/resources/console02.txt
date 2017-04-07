@@ -39,10 +39,18 @@ WARNING: Console code page (866) differs from Windows code page (1251)
 You are now connected to database "univerlesson02_orm" as user "postgres".
 univerlesson02_orm=#
 
-
+/** After Part07_SessionFactory */
 univerlesson02_orm=# select * from myusers;
  id | lastname | firstname
 ----+----------+-----------
   1 | Шкляр    | Инна
 (1 row)
 =====================================
+
+/** After Part08_EntityManager */
+univerlesson02_orm=# select * from myusers;
+ id | lastname | firstname
+----+----------+-----------
+  1 | Шкляр    | Инна
+  2 | pupkin   | petya
+(2 rows)
