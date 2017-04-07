@@ -4,17 +4,17 @@ package ua.com.univer.pulse.lesson02.dao;
  * DAO это сочетание фабрики и синглтона.
  * Обычно UserDAO - это синглтоны.
  */
-public class DAOFactory {
-    private static DAOFactory instance;
+public class Part06_DAOFactory {
+    private static Part06_DAOFactory instance;
 
     UserDAO userDAO = new UserDAOImpl();
 
-    private DAOFactory() {
+    private Part06_DAOFactory() {
     }
 
-    public synchronized static DAOFactory getInstance() {
+    public synchronized static Part06_DAOFactory getInstance() {
         if (instance == null) {
-            instance = new DAOFactory();
+            instance = new Part06_DAOFactory();
         }
         return instance;
     }
