@@ -6,4 +6,6 @@ package ua.com.univer.pulse.lesson02.dao;
 public interface UserDAO {
 
     UserDTO getUserById(Long id);
+
+    String getName(Long id);
 }

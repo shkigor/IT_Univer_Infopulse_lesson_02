@@ -1,7 +1,8 @@
 package ua.com.univer.pulse.lesson02.dao;
 
 /**
- * Created by IShklyar on 06.04.2017.
+ * DAO это сочетание фабрики и синглтона.
+ * Обычно UserDAO - это синглтоны.
  */
 public class DAOFactory {
     private static DAOFactory instance;

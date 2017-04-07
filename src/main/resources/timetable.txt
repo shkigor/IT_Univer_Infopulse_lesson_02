@@ -11,3 +11,7 @@ end   1:40
 DAO
 start 1:40:10
 end   ???
+
+JPA, Hibernate
+start 2:17:35
+ActiveRecords 2:23:00
