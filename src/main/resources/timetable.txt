@@ -1,5 +1,7 @@
 Timetable:
 
+PART 1
+
 ResultSetMetaData
 start ???
 end   1:26:50
@@ -8,9 +10,17 @@ end   1:26:50
 start 1:27
 end   1:40
 
+
+
+PART 2
+
 DAO
 start 1:40:10
 end   ???
+
+
+
+PART 3
 
 JPA, Hibernate
 start 2:17:35
