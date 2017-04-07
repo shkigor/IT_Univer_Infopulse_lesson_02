@@ -25,3 +25,24 @@ univerlesson01=# select * from clients;
   4 | Ivan1 | Ivanov1
   6 | aaa2  | aaa2
 (5 rows)
+=====================================
+
+
+/** Part07_SessionFactory */
+postgres=# create database univerlesson02_orm;
+CREATE DATABASE
+
+postgres=# \c univerlesson02_orm
+WARNING: Console code page (866) differs from Windows code page (1251)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+You are now connected to database "univerlesson02_orm" as user "postgres".
+univerlesson02_orm=#
+
+
+univerlesson02_orm=# select * from myusers;
+ id | lastname | firstname
+----+----------+-----------
+  1 | Шкляр    | Инна
+(1 row)
+=====================================

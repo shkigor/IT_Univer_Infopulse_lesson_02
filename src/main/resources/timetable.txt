@@ -24,4 +24,9 @@ PART 3
 
 JPA, Hibernate
 start 2:17:35
-ActiveRecords 2:23:00
+    ActiveRecords 2:23:00
+
+SessionFactory
+end   3:21:50
+
+
