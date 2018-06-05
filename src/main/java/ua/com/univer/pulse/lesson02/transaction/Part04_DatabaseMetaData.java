@@ -1,6 +1,7 @@
 package ua.com.univer.pulse.lesson02.transaction;
 
 import java.sql.*;
+import java.util.Arrays;
 
 /**
  * Created by IShklyar on 04.04.2017.
@@ -24,6 +25,8 @@ public class Part04_DatabaseMetaData {
         while (metaDataCatalogs.next()) {
             System.out.println(metaDataCatalogs.getString(1));
         }
+
+        System.out.println(Arrays.toString(metaData.getNumericFunctions().split(","))); // Список скалярных функций [abs, acos, asin, atan, atan2, ceiling, cos, cot, degrees, exp, floor, log, log10, mod, pi, power, radians, round, sign, sin, sqrt, tan, truncate]
 
         con.close();
     }

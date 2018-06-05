@@ -21,7 +21,7 @@ public class Part02_Savepoint {
         Savepoint point = null;
 
         try {
-            st1.execute("insert into clients(name, lastname) values ('aaa2', 'aaa2')");
+            st1.execute("insert into clients(name, lastname) values ('aaa2222', 'aaa2222')");
             point = con.setSavepoint();
             st1.execute("insert into clients(name, lastname) valuesaa ('bbb2', 'bbb2')");
         } catch (SQLException e) {
@@ -29,6 +29,12 @@ public class Part02_Savepoint {
             con.rollback(point);
         } finally {
             con.commit();
+        }
+
+        String selectSql = "select * from clients";
+        ResultSet rs = st1.executeQuery(selectSql);
+        while (rs.next()) {
+            System.out.println(rs.getInt("id") + " " + rs.getString("name") + " " + rs.getString("lastname"));
         }
 
         con.close();

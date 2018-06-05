@@ -7,7 +7,7 @@ package ua.com.univer.pulse.lesson02.dao;
 public class Part06_DAOFactory {
     private static Part06_DAOFactory instance;
 
-    UserDAO userDAO = new UserDAOImpl();
+    private UserDAO userDAO = new UserDAOImpl();
 
     private Part06_DAOFactory() {
     }

@@ -1,9 +1,6 @@
 package ua.com.univer.pulse.lesson02.transaction;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 /**
  * Created by IShklyar on 04.04.2017.
@@ -27,6 +24,12 @@ public class Part01_Rollback {
             con.rollback();
         } finally {
             con.commit();
+        }
+
+        String selectSql = "select * from clients";
+        ResultSet rs = st1.executeQuery(selectSql);
+        while (rs.next()) {
+            System.out.println(rs.getInt("id") + " " + rs.getString("name") + " " + rs.getString("lastname"));
         }
 
         con.close();

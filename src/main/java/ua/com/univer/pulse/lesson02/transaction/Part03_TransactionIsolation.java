@@ -17,6 +17,13 @@ public class Part03_TransactionIsolation {
         System.out.println(con.getTransactionIsolation() == Connection.TRANSACTION_READ_COMMITTED);
         con.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
 
+        // Get current date using JDBC
+        Statement stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT {fn curdate()");
+        while (rs.next()) {
+            System.out.println("results: " + rs.getString(1));
+        }
+
         con.close();
     }
 }
